@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.author       = { 'Baptiste FETET' => 'woaf1003@gmail.com' }
   s.source       = { :git => "git@github.com:jjz/KeychainItemWrapperNoAssert.git" }
   s.source_files = '*.{h,m}'
-  s.requires_arc = true
+  s.requires_arc = false
 end
