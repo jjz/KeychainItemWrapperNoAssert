@@ -58,11 +58,10 @@
 {
     NSMutableDictionary *keychainItemData;		// The actual keychain item data backing store.
     NSMutableDictionary *genericPasswordQuery;	// A placeholder for the generic keychain item query used to locate the item.
-    NSString* _identifier;
 }
 
-@property (nonatomic, strong) NSMutableDictionary *keychainItemData;
-@property (nonatomic, strong) NSMutableDictionary *genericPasswordQuery;
+@property (nonatomic, retain) NSMutableDictionary *keychainItemData;
+@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;
 
 // Designated initializer.
 - (id)initWithIdentifier: (NSString *)identifier accessGroup:(NSString *) accessGroup;
